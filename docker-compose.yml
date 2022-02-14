@@ -1,0 +1,18 @@
+services:
+  soda-adventureworks:
+    image:
+      sodadata/soda-adventureworks
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=secret
+
+  soda-core:
+    image:
+      sodadata/soda-core
+    volumes:
+      - ./sodacl/:/sodacl/
+    links:
+      - 'soda-adventureworks:db'
+    stdin_open: true
+    tty: true

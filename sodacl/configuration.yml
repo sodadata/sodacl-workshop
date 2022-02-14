@@ -1,0 +1,8 @@
+data_source adventureworks:
+  type: postgres
+  connection:
+    host: db
+    username: postgres
+    password: secret
+  database: postgres
+  schema: public
