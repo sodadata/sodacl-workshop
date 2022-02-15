@@ -17,7 +17,7 @@ Open another terminal window and connect to the Soda Core container and run
 sodacl files, the prompt should look something like this:
 
 ```shell
-➜ docker-compose exec sodacore /bin/bash
+➜ docker-compose exec soda-core /bin/bash
 root@80e6a2167613:/sodacl#
 ```
 
