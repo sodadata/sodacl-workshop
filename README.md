@@ -7,12 +7,10 @@ Refer to the [SodaCL Preview Program Instructions](/instructions.md) for further
 ## Set up
 1. In Terminal, run the following command to set up the prepared testing environment:
 `docker-compose up`
-<br/>
 2. When the `database system is ready to accept connections`, open a new Terminal tab or window and run the following command to open a shell with the SodaCL files.
 `docker-compose exec soda-core /bin/bash`
 The command results in a prompt similar to the following:
 `root@80e6a2167613:/sodacl#`
-<br/>
 3. To test that the environment is working properly, run a Soda scan: 
 `soda scan -d adventureworks -c configuration.yml -ch checks.yml` 
 The command output results in the following output:
