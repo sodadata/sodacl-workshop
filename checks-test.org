@@ -11,11 +11,21 @@
 
 * Missing and Validity Checks
 - https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/missing-and-validity-checks.md
- | check                                  | status | bug |
- |----------------------------------------+--------+-----|
- | missing                                | :white_check_mark:    |     |
- | missing_percent                        | :white_check_mark:    |     |
- | missing_values                         | :white_check_mark:    |     |
- | missing regex                          | :white_check_mark:    |     |
- | missing values - global configurations | :x:    |     |
- |                                        |        |     |
+ | check                                  | status | bug                                                |
+ |----------------------------------------+--------+----------------------------------------------------|
+ | missing                                | :white_check_mark:    |                                                    |
+ | missing_percent                        | :white_check_mark:    |                                                    |
+ | missing_values                         | :white_check_mark:    |                                                    |
+ | missing regex                          | :white_check_mark:    |                                                    |
+ | missing values - global configurations | :x:    | https://github.com/sodadata/soda-sql-v3/issues/170 |
+ | invalid count                          | :white_check_mark:    |                                                    |
+ | invalid with valid values              | :white_check_mark:    |                                                    |
+ | validity format integer                | :x:    | https://github.com/sodadata/soda-sql-v3/issues/171 |
+ | valid min length                       | :white_check_mark:    |                                                    |
+ | valid max length                       | :x:    | https://github.com/sodadata/soda-sql-v3/issues/172 |
+ | valid length                           | :white_check_mark:    |                                                    |
+ | valid min                              | :white_check_mark:    |                                                    |
+ | valid max                              | :x:    | https://github.com/sodadata/soda-sql-v3/issues/174 |
+ |                                        |        |                                                    |
+** Other bugs:
+ - https://github.com/sodadata/soda-sql-v3/issues/173
