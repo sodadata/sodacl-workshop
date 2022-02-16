@@ -38,7 +38,7 @@ All is good. No failures. No warnings. No errors.
 
 # Datawarehouse
 We use adventureworks datawarehouse which contains a dimensional model schema with dimention tables and facts tables. You can connect and inspect the tables for details. Here's the schema diagram:
-![adventureworks](https://user-images.githubusercontent.com/23506/154226042-360db581-995a-4023-9a90-26c8a9816457.png)
+![adventureworks](adventureworks.png)
 
 # Editing the checks
 You can edit and create more checks in the folder `sodacl`, this file is mounted
