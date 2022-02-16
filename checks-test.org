@@ -1,0 +1,21 @@
+*   Row Count checks
+ - https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/row-count-checks.md
+ | check            | status | bug                                                |
+ |------------------+--------+----------------------------------------------------|
+ | threshold        | :white_check_mark:    |                                                    |
+ | between          | :white_check_mark:    |                                                    |
+ | filter           | :white_check_mark:    |                                                    |
+ | cross table      | :white_check_mark:    |                                                    |
+ | cross datasource | :question:    |                                                    |
+ | change over time | :x:    | https://github.com/sodadata/soda-sql-v3/issues/169 |
+
+* Missing and Validity Checks
+- https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/missing-and-validity-checks.md
+ | check                                  | status | bug |
+ |----------------------------------------+--------+-----|
+ | missing                                | :white_check_mark:    |     |
+ | missing_percent                        | :white_check_mark:    |     |
+ | missing_values                         | :white_check_mark:    |     |
+ | missing regex                          | :white_check_mark:    |     |
+ | missing values - global configurations | :x:    |     |
+ |                                        |        |     |
