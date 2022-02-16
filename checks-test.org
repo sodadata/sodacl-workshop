@@ -1,0 +1,70 @@
+* Row Count checks
+  https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/row-count-checks.md
+
+| check            | status | bug                                                |
+|------------------+--------+----------------------------------------------------|
+| threshold        | :white_check_mark:    |                                                    |
+| between          | :white_check_mark:    |                                                    |
+| filter           | :white_check_mark:    |                                                    |
+| cross table      | :white_check_mark:    |                                                    |
+| cross datasource | :question:    |                                                    |
+| change over time | :x:    | https://github.com/sodadata/soda-sql-v3/issues/169 |
+
+
+* Missing and Validity Checks
+ https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/missing-and-validity-checks.md
+
+ | check                                         | status | bug                                                |
+ |-----------------------------------------------+--------+----------------------------------------------------|
+ | missing                                       | :white_check_mark:    |                                                    |
+ | missing_percent                               | :white_check_mark:    |                                                    |
+ | missing_values                                | :white_check_mark:    |                                                    |
+ | missing regex                                 | :white_check_mark:    |                                                    |
+ | missing values - global configurations        | :x:    | https://github.com/sodadata/soda-sql-v3/issues/170 |
+ | invalid count                                 | :white_check_mark:    |                                                    |
+ | invalid with valid values                     | :white_check_mark:    |                                                    |
+ | validity format integer                       | :x:    | https://github.com/sodadata/soda-sql-v3/issues/171 |
+ | valid min length                              | :white_check_mark:    |                                                    |
+ | valid max length                              | :x:    | https://github.com/sodadata/soda-sql-v3/issues/172 |
+ | valid length                                  | :white_check_mark:    |                                                    |
+ | valid min                                     | :white_check_mark:    |                                                    |
+ | valid max                                     | :x:    | https://github.com/sodadata/soda-sql-v3/issues/174 |
+ | valid values + invalid count                  | :white_check_mark:    |                                                    |
+ | valid values + missing values + invalid count | :white_check_mark:    |                                                    |
+ | valid format email                            | :x:    | https://github.com/sodadata/soda-sql-v3/issues/175 |
+ | valid format ipv4 address                     | :white_check_mark:    |                                                    |
+ | valid format date iso 8601                    | :x:    | https://github.com/sodadata/soda-sql-v3/issues/176 |
+ | valid format timestamp 24h                    | :x:    | https://github.com/sodadata/soda-sql-v3/issues/176 |
+ | valid format date us                          | :x:    |                                                    |
+
+** Other bugs:
+ - https://github.com/sodadata/soda-sql-v3/issues/173
+
+*  Duplicate Checks
+ https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/duplicate-checks.md
+
+| check                     | status | bug                                                |
+|---------------------------+--------+----------------------------------------------------|
+| duplicate single column   | :x:    | https://github.com/sodadata/soda-sql-v3/issues/177 |
+| duplicate combination key | :x:    | https://github.com/sodadata/soda-sql-v3/issues/177 |
+|                           |        |                                                    |
+* Statistical checks
+ https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/statistical-checks.md
+
+| check                | status | bug                                                |
+|----------------------+--------+----------------------------------------------------|
+| min on money column  | :x:    | https://github.com/sodadata/soda-sql-v3/issues/178 |
+| min on integer       | :white_check_mark:    |                                                    |
+| max on integer       | :white_check_mark:    |                                                    |
+| min between integers | :white_check_mark:    |                                                    |
+| max between integers | :white_check_mark:    |                                                    |
+| sum on money column  | :x:    | https://github.com/sodadata/soda-sql-v3/issues/178 |
+| sum on integers      | :white_check_mark:    |                                                    |
+
+* Reference Checks
+https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/reference-checks.md
+
+| check                          | status | bug                                                |
+|--------------------------------+--------+----------------------------------------------------|
+| reference with one column      | :x:    | https://github.com/sodadata/soda-sql-v3/issues/179 |
+| reference with multiple column | :x:    | https://github.com/sodadata/soda-sql-v3/issues/179 |

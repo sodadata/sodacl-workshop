@@ -136,3 +136,11 @@ The present terms and conditions apply to the contractual relationship (“Agree
 
 10.Miscellany. The provisions titled Limited Warranty, Confidentiality, Limitation of Liability shall survive termination hereof. This Agreement may not be amended or superseded except by a writing signed by both Participant and Soda, and shall be governed by and construed under the laws of Belgium. Participant shall not assign or otherwise transfer any rights or obligations under this Agreement. All disputes relating to the Agreement, including its interpretation, fall under the exclusive jurisdiction of the courts of the district of Brussels, Belgium.
 
+# Datawarehouse
+We use adventureworks datawarehouse which contains a dimensional model schema with dimention tables and facts tables. You can connect and inspect the tables for details. Here's the schema diagram:
+![adventureworks](adventureworks.png)
+
+# Editing the checks
+You can edit and create more checks in the folder `sodacl`, this file is mounted
+in the sodacore container at `/sodacl`. You can run any SodaCL files as shown
+above.
