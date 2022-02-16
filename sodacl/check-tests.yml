@@ -13,7 +13,20 @@ checks for fact_finance:
   - duplicates(date_key) = 0
   - duplicates(date_key, account_key) = 0
   - reference from (organization_key) to dim_organization (organization_key)
-
+  - schema:
+      fail:
+        when required column missing: [finance_key]
+        when wrong column type:
+          finance_key: integer
+          date_key: integer # use alias when fixed
+          amount: double precision # use alias when fixed
+          date: timestamp without time zone
+        when wrong column index:
+          finance_key: 0
+        when forbidden column present: [deprecated_col, "pii_*"]
+      warn:
+        when wrong column index:
+          date_key: 1
 checks for fact_internet_sales:
   - invalid(ship_date) = 0:
       valid format: date iso 8601
@@ -23,7 +36,7 @@ checks for dim_geography:
       valid format: ipv4 address
 
 checks for dim_employee:
-  - invalid(email_address) = 0 :
+  - invalid(email_address) = 0:
       valid format: email
 
 checks for dim_product:
@@ -31,16 +44,16 @@ checks for dim_product:
   - change avg last 7 for count < 50
   - count > 0
   - count between 100 and 600
-  - count = 0 :
+  - count = 0:
       filter: color = 'Silver'
   - count same as dim_account
   - invalid(color) = 0:
-       missing values:
-         - NA
-       valid values:
-           - Black
-           - White
-           - Blue
+      missing values:
+        - NA
+      valid values:
+        - Black
+        - White
+        - Blue
   - invalid(weight_unit_measure_code) = 0:
       valid values: [G]
   - invalid(weight) = 0:

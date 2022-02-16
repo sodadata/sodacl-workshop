@@ -13,7 +13,10 @@ In a terminal window run :
 `docker-compose up`
 
 Open another terminal window and connect to the Soda Core container and run
-`docker-compose exec soda-core /bin/bash`. This will open a shell with the
+
+`docker-compose exec soda-core /bin/bash`
+
+This will open a shell with the
 sodacl files, the prompt should look something like this:
 
 ```shell
@@ -22,8 +25,11 @@ root@80e6a2167613:/sodacl#
 ```
 
 You can run Soda core scan to test if everything is working as expected by
-running `soda scan -d adventureworks -c configuration.yml -ch checks.yml` in the
-container. The command output should look like the following:
+running
+
+`soda scan -d adventureworks -c configuration.yml -ch checks.yml`
+
+in the container. The command output should look like the following:
 
 
 ```shell

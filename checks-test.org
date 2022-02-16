@@ -68,3 +68,13 @@ https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/reference-checks.m
 |--------------------------------+--------+----------------------------------------------------|
 | reference with one column      | :x:    | https://github.com/sodadata/soda-sql-v3/issues/179 |
 | reference with multiple column | :x:    | https://github.com/sodadata/soda-sql-v3/issues/179 |
+
+* Schema checks
+- https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/schema-checks.md
+ | check            | status | bug                                                |
+ |------------------+--------+----------------------------------------------------|
+ | missing column    | :white_check_mark: |                                       |
+ | column types      | :white_check_mark: |                                       |
+ | column index      | :white_check_mark: |                                       |
+ | forbidden columns | :white_check_mark: |                                       |
+ | change over time  | :x:                |                                       |
