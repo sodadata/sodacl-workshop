@@ -84,3 +84,13 @@ checks for dim_product:
 
 configurations for dim_product:
   - missing values color: [NA]
+
+for each table T:
+  tables:
+    - fact_%
+    - include dim_prod%
+    - exclude fact_sales_quota
+    - exclude fact_fin%
+    - adventure%.new_%
+  checks:
+    - count > 0

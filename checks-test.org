@@ -78,3 +78,14 @@ https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/reference-checks.m
  | column index      | :white_check_mark: |                                       |
  | forbidden columns | :white_check_mark: |                                       |
  | change over time  | :x:                |                                       |
+
+
+* For each checks
+- https://github.com/sodadata/soda-sql-v3/blob/main/docs/sodacl/for-each-checks.md
+ | check            | status | bug                                                |
+ |------------------+--------+----------------------------------------------------|
+ | table basic use  | :white_check_mark: |                                                 |
+ | table data source wildcard  | :x: | https://github.com/sodadata/soda-sql-v3/issues/181  |
+ | table exclude after include  | :x: | https://github.com/sodadata/soda-sql-v3/issues/182 |
+ | column | :x:        |                                                                   |
+ | group  | :x:        |                                                                   |
