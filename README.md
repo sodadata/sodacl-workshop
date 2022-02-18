@@ -40,7 +40,7 @@ To browse the contents of the database, use the DB connection details in the [co
 
 1. Review [SodaCL: The Basics](#sodacl-the-basics) if you wish.
 2. Open the checks.yml file in your code editor or Terminal. The [checks.yml](/sodacl/checks.yml) file is where you define Soda Checks using SodaCL. You can edit the existing file to adjust the existing check and add others, or you can create a new YAML file to write your checks. 
-3. Reference the included list of built-in SodaCL metrics and check examples to write your own checks that look for bad-quality data in the demo database.
+3. Reference the included list of [built-in SodaCL checks](https://github.com/sodadata/sodacl-workshop/blob/main/docs/README.md) to write your own checks that look for bad-quality data in the demo database.
 4. When you have written a check or two, use the command-line to run another soda scan. If you created your own YAML file to write checks, replace `checks.yml` with your own file name in the soda scan command: 
 `soda scan -d adventureworks -c configuration.yml -ch checks.yml`
 5. Write more checks and run more scans! Explore the different built-in metrics and how they work in the context of a check. You can see the full list of checks currently available in the [documentation](https://github.com/sodadata/sodacl-workshop/blob/main/docs/README.md).
