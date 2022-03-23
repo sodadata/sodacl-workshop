@@ -1,2 +1,2 @@
 checks for dim_account:
- - count between 20 and 100
+ - row_count between 20 and 100

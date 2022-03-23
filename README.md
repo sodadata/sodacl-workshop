@@ -19,14 +19,14 @@ We hope to ask for your honest feedback as you complete the short exercises that
 The command results in a prompt similar to the following:
 `root@80e6a2167613:/sodacl#`
 3. To test that the environment is working properly, run a Soda scan: 
-`soda scan -d adventureworks -c configuration.yml -ch checks.yml` 
+`soda scan -d adventureworks -c configuration.yml checks.yml` 
 The command output results in the following output:
 ```shell
 Soda Core 0.0.1
 Scan summary:
 1/1 check PASSED:
     dim_account in adventureworks
-      count between 20 and 100 [PASSED]
+      row_count between 20 and 100 [PASSED]
 All is good. No failures. No warnings. No errors.
 ```
 
