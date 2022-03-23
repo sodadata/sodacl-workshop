@@ -1,25 +1,5 @@
-# SodaCL docs
+# Documentation
 
-SodaCL is a new, simple yet powerful declarative language for data reliability as code.
+Access documentation for <a href="https://docs.soda.io/soda-cl/soda-cl-overview.html" target="_blank" >SodaCL (Beta)</a>.
 
-* [Row count checks](./row-count-checks.md)
-* [Schema checks](./schema-checks.md)
-* [Missing & validity checks](./missing-and-validity-checks.md)
-* [Duplicate checks](./duplicate-checks.md)
-* [Statistical checks](./statistical-checks.md)
-* [Reference checks](./reference-checks.md)
-* [Freshness checks](./freshness-checks.md)
-* [User-defined checks](./user-defined-checks.md)
-* [For each checks](./for-each-checks.md)
-  * [For each table](./for-each-checks.md#for-each-table)
-  * [For each column](./for-each-checks.md#for-each-column)
-  * [For each group](./for-each-checks.md#for-each-group)
-* [Quoting](./quoting.md)
-* [Variables](./variables.md)
-* [Partitions](./partitions.md)
-* [Thresholds](./thresholds.md)
-  * [Fixed boundary thresholds](./thresholds.md#fixed-boundary-thresholds)
-  * [Change over time thresholds](./thresholds.md#change-over-time-thresholds)
-  * [Anomaly detection thresholds](./thresholds.md#anomaly-detection-thresholds)
-  * [Warning thresholds](./thresholds.md#warning-thresholds)
-* [Automated monitoring](./automated_monitoring.md)
+Access documentation for <a href="https://docs.soda.io/soda-core/overview.html" target="_blank" >Soda Core (Beta)</a>.
