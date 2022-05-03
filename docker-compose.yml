@@ -1,15 +1,15 @@
 services:
   soda-adventureworks:
-    image:
-      sodadata/soda-adventureworks
+    image: sodadata/soda-adventureworks
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=secret
 
   soda-core:
-    image:
-      sodadata/soda-core
+    entrypoint: "/bin/bash"
+    working_dir: /sodacl
+    image: sodadata/soda-core
     volumes:
       - ./sodacl/:/sodacl/
     links:
